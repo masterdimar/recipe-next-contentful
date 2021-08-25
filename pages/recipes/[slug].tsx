@@ -35,7 +35,7 @@ export const getStaticProps: GetStaticProps = async (
         'fields.slug': context.params.slug
     });
 
-    if(!res.items || res.items.length)
+    if(!res.items || !res.items.length)
     {
         return {
             redirect: {
