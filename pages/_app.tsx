@@ -1,11 +1,14 @@
-// 1. import `ChakraProvider` component
+import '../styles/global.css'
+import Layout from '../components/layout'
 import { ChakraProvider } from "@chakra-ui/react"
 
 function RecipeApp({ Component, pageProps }) {
   // 2. Use at the root of your app
   return (
     <ChakraProvider>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
         
     </ChakraProvider>
   )

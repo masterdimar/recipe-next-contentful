@@ -27,20 +27,13 @@ export async function getStaticProps()
 
 export default function Recipes( props: Props) {  
   return (
-    <Box>
-      <Center>
-        <Heading>
-          Master Recipe
-        </Heading>          
-      </Center>  
-      <Box>
+      <Box className="recipe-list">
         {
           props.recipes.map((recipe: IRecipe) => (
             <RecipeCard key={recipe.sys.id} recipe={recipe.fields}></RecipeCard>
           ))
         }
-      </Box>
-   </Box>     
+      </Box>   
   );
 }
 

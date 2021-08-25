@@ -60,10 +60,7 @@ export default function RecipeDetails( props: Props)
 
     return(
         <Box>
-        <Box>
             {props.recipe.fields.title}
-        </Box>
-        <Link href="/">Go to Index</Link>
         </Box>
     )
 }
